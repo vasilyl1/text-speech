@@ -17,6 +17,7 @@
     "speech",
     "AI"
   ],
+  "type": "module",
   "author": "Vasily Likhovaydo",
   "license": "MIT",
   "bugs": {
@@ -25,6 +26,9 @@
   "homepage": "https://github.com/vasilyl1/text-speech#readme",
   "dependencies": {
     "dotenv": "^16.4.7",
-    "openai": "^4.86.1"
+    "node-fetch": "^3.3.2",
+    "ollama-ocr": "^0.0.2",
+    "openai": "^4.86.1",
+    "xhr2": "^0.2.1"
   }
 }

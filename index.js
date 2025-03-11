@@ -63,7 +63,8 @@ const ocr = async () => {
         console.log(`Processing file: ${process.env.INPUTIMAGE} using local machine compute power, it can take minutes if not longer based on your chipset. \n Please be patient!`);
         const text = await ollamaOCR({
             filePath: process.env.INPUTIMAGE,
-            systemPrompt: DEFAULT_MARKDOWN_SYSTEM_PROMPT + ' ' + process.env.ADDPROMPT,
+            //systemPrompt: DEFAULT_MARKDOWN_SYSTEM_PROMPT + ' ' + process.env.ADDPROMPT,
+            systemPrompt: process.env.ADDPROMPT,
         });
         console.log(text);
     } catch (err) {

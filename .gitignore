@@ -132,4 +132,8 @@ dist
 *.mp3
 *.wav
 *.jpeg
+*.jpg
+*.txt
+
+
 
